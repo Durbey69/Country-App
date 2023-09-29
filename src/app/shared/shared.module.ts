@@ -5,10 +5,11 @@ import { RouterModule } from '@angular/router';
 
 
 import { AboutPageComponent } from './pages/about-page/about-page.component';
-import { SidebarComponent } from './components/sidebar/sidebar.component';
-import { HomePageComponent } from './pages/home-page/home-page.component';
 import { ContactPagesComponent } from './pages/contact-pages/contact-pages.component';
+import { HomePageComponent } from './pages/home-page/home-page.component';
+import { LoadingSpinnerComponent } from './components/loading-spinner/loading-spinner.component';
 import { SearchBoxComponent } from './components/search-box/search-box.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
 
 
 
@@ -17,10 +18,11 @@ import { SearchBoxComponent } from './components/search-box/search-box.component
 @NgModule({
   declarations: [
       AboutPageComponent,
-      HomePageComponent,
-      SidebarComponent,
       ContactPagesComponent,
-      SearchBoxComponent
+      HomePageComponent,
+      LoadingSpinnerComponent,
+      SearchBoxComponent,
+      SidebarComponent,
   ],
   imports: [
     CommonModule,
@@ -28,10 +30,11 @@ import { SearchBoxComponent } from './components/search-box/search-box.component
   ],
   exports: [
     AboutPageComponent,
-    HomePageComponent,
-    SidebarComponent,
     ContactPagesComponent,
-    SearchBoxComponent
+    HomePageComponent,
+    LoadingSpinnerComponent,
+    SearchBoxComponent,
+    SidebarComponent,
 
   ]
 })
